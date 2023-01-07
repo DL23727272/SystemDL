@@ -1,0 +1,68 @@
+.modal-container{
+    background-color: white;
+}
+
+.modal{
+    position: fixed;
+    object-fit: cover;
+    object-position: 2% 2%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10% auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#modal-dialog{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal::backdrop{
+    background: linear-gradient(45deg,  #242582, white);
+    opacity: .1;
+}
+
+#modal-dialog, h1 label{
+    font-family: 'helvetica', sans-serif;
+}
+
+#modal-dialog label{
+    text-align: left;
+}
+
+#modal-dialog h1{
+    text-align: center;
+}
+
+#modal-dialog .btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+    gap: 10px;
+}
+
+#modal-dialog #values-input{
+    margin: 5px 0;
+}
+
+#modal-dialog #submit{
+    background-color:  #242582;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+#modal-dialog #cancel{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+#name, #contact, #check-in-Date, #check-in-Time, #stay{
+    padding: 15px;
+    margin: 20px 0;
+}

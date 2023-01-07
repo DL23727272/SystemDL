@@ -1,0 +1,95 @@
+/*-------------------------------------------------*/
+.hotel-info-content img{
+    width: 300px;
+}
+
+.top-content img{
+    width: 150px;
+}
+
+.main-content{
+    margin: 10px 10px 80px 10px;
+}
+
+.main-content h1{
+    text-align: center;
+    color: #242582;
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.main-content .section-container{
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+}
+
+.main-content .hero-content{
+    width: 50%;
+    height: 50vh;
+    border-right: 2px solid #242582;
+}
+
+.main-content .top-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #242582;
+    padding: 20px;
+}
+
+.main-content .top-content p{
+    color: white;
+    padding: 0 0 20px 70px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-content .center-content{
+    color: #242582;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.main-content .center-content p{
+    margin: 0px 0;
+}
+
+.main-content .additional-content{
+    padding: 20px;
+    width: 50%;
+    height: 50vh;
+}
+
+.main-content .price-content h1{
+    text-align: end;
+    font-size: 30px;
+}
+
+.main-content .price-content #price-display1, #price-display2, #price-display3{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: end;
+}
+
+.main-content .hotel-info-content img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.main-content .hotel-info-content p{
+    color: #242582;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.main-content .hotel-info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+

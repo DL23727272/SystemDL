@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  /* border: 2px solid black;*/
+    
+}
+hr{
+    background-color: black;
+    border: 2px solid black;
+    
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(20, 239, 191);
+ }
+.header{
+    /* background-image: url(img/bg.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2rem);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+ }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 10px 20px;
+   /* background: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(1rem); */
+}
+.nav_links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 5px 10px 0 10px;
+}
+.nav_links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+nav img{
+    width: 150px;
+    filter: invert();
+    margin: 15px;
+}
+nav .nav_links li.btn a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    line-height: 1,3;
+    color: black;
+    font-weight: 600;
+}
+.info{
+    padding: 10% ;
+    text-align: center;
+}
+.info h1{
+    font-size: 90px;
+}
+.home{
+    margin: 18% ;
+}
+.info a{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px 20px;
+    color: black;
+}
+.hero_btn:hover{
+    border: 2px solid black;
+    background: black;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+/*--------------Image Fade Display--- */
+#slider img{
+    width: 96.5vw;
+    height: 50vh;   
+    
+}
+#slider {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px;
+    position: relative;
+}
+#slider img{
+    
+    position: absolute;
+    border-radius: 10px;
+    
+}
+/*------------About---------------------*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.course_col{
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course_col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.course_col img{
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    size: 30px;
+}
+.icons .fa-brands:hover{
+ color: black;
+}
+.D_{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+/*------------Contact---------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact_us{
+    width: 80%;
+    margin: auto;
+}
+.contact_col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact_col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact_col div .fa-solid{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact_col div p{
+    padding: 0;
+}
+.contact_col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact_col input, .contact_col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.hero_btn{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 4px 20px;
+    color: black;
+    background-color: transparent;
+}
+.location h1{
+    text-align: center;
+    padding: 0 0 10px;
+}
+/*-------------------------------------------------*/
+.hotel-info-content img{
+    width: 300px;
+}
+
+.top-content img{
+    width: 150px;
+}
+
+.main-content{
+    margin: 10px 10px 80px 10px;
+}
+
+.main-content h1{
+    text-align: center;
+    color: #242582;
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.main-content .section-container{
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+}
+
+.main-content .hero-content{
+    width: 50%;
+    height: 50vh;
+    border-right: 2px solid #242582;
+}
+
+.main-content .top-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #242582;
+    padding: 20px;
+}
+
+.main-content .top-content p{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main-content .center-content{
+    color: #242582;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.main-content .center-content p{
+    margin: 0px 0;
+}
+
+.main-content .additional-content{
+    padding: 20px;
+    width: 50%;
+    height: 50vh;
+}
+
+.main-content .price-content h1{
+    text-align: end;
+    font-size: 30px;
+}
+
+.main-content .price-content #price-display1, #price-display2, #price-display3{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: end;
+}
+
+.main-content .hotel-info-content img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.main-content .hotel-info-content p{
+    color: #242582;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.main-content .hotel-info-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
