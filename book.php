@@ -25,58 +25,66 @@
                 document.getElementById("stay2").innerHTML = days;
                 document.getElementById("stay3").innerHTML = days;
                 document.getElementById("check_in").innerHTML = d1;
-} 
-function twinHide(){
-   
-    if(document.getElementById('Tsave').click){
-        document.getElementById('bookingmain').style.display = "none";
-        document.getElementById('bookingDeluxe').style.display = "none";
-        document.getElementById('bookingSuperDeluxe').style.display = "none";
-        document.getElementById('booking').style.display = "block";
- 
-   }
-   else{
-    document.getElementById('bookingmain').style.display = "none";
-    document.getElementById('bookingDeluxe').style.display = "none";
-    document.getElementById('bookingSuperDeluxe').style.display = "none";
-    document.getElementById('booking').style.display = "block";
-   }
- }
- function delxHide(){
-   
-   if(document.getElementById('delx-save').click){
-       document.getElementById('bookingmain').style.display = "none";
-       document.getElementById('bookingDeluxe').style.display = "block";
-       document.getElementById('bookingSuperDeluxe').style.display = "none";
-       document.getElementById('booking').style.display = "none";
+        }
+        function allHide(){
+        
+            document.getElementById("bookingmain").style.display = "block";
+            document.getElementById('booking').style.display = "none";
+            document.getElementById('bookingDeluxe').style.display = "none";
+            document.getElementById('bookingSuperDeluxe').style.display = "none";
+        }
+        function twinHide(){
+        
+           
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "none";
+                document.getElementById('bookingSuperDeluxe').style.display = "none";
+                document.getElementById('booking').style.display = "block";
+        
+           /* }
+            else{
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "none";
+                document.getElementById('bookingSuperDeluxe').style.display = "none";
+                document.getElementById('booking').style.display = "block";
+            } */
+        }
+        function delxHide(){
+        
+            if(document.getElementById('delx-save').click){
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "block";
+                document.getElementById('bookingSuperDeluxe').style.display = "none";
+                document.getElementById('booking').style.display = "none";
 
-  }
-  else{
-   document.getElementById('bookingmain').style.display = "none";
-   document.getElementById('bookingDeluxe').style.display = "block";
-   document.getElementById('bookingSuperDeluxe').style.display = "none";
-   document.getElementById('bookingmain').style.display = "none";
-  }
-}
-function superHide(){
-   
-   if(document.getElementById('super-save').click){
-       document.getElementById('bookingmain').style.display = "none";
-       document.getElementById('bookingDeluxe').style.display = "none";
-       document.getElementById('bookingSuperDeluxe').style.display = "block";
-       document.getElementById('booking').style.display = "none";
+            }
+            else{
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "none";
+                document.getElementById('bookingSuperDeluxe').style.display = "none";
+                document.getElementById('bookingmain').style.display = "none";
+            }
+        }
+        function superHide(){
+        
+            if(document.getElementById('super-save').click){
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "none";
+                document.getElementById('bookingSuperDeluxe').style.display = "block";
+                document.getElementById('booking').style.display = "none";
 
-  }
-  else{
-   document.getElementById('bookingmain').style.display = "none";
-   document.getElementById('bookingDeluxe').style.display = "none";
-   document.getElementById('bookingSuperDeluxe').style.display = "none";
-   document.getElementById('bookingmain').style.display = "none";
-  }
-}
+            }
+            else{
+                document.getElementById('bookingmain').style.display = "none";
+                document.getElementById('bookingDeluxe').style.display = "none";
+                document.getElementById('bookingSuperDeluxe').style.display = "none";
+                document.getElementById('bookingmain').style.display = "none";
+            }
+        }
+
        </script>
     </head>
-    <body>
+    <body onload="allHide()">
         <section class="header">
             <nav>
                 
@@ -379,7 +387,7 @@ function superHide(){
             <div class="row">
                 <div class="course_col">
                     <h3>Twin Bed Room</h3>
-                    <img id="img1" onclick="twinHide()" src="img/twin.jpg" alt="" data-toggle="modal" data-target="#twin" >
+                    <img id="img1" onmouseover="twinHide()" src="img/twin.jpg" alt="" data-toggle="modal" data-target="#twin" >
                     <div class="layer">
                     </div>
                     <h2>₱5,000</h2>
@@ -389,7 +397,7 @@ function superHide(){
 
                 <div class="course_col">
                     <h3>Deluxe</h3>
-                    <img id="img2" onclick="delxHide()" src="img/3.jpg" alt="" data-toggle="modal" data-target="#delx">
+                    <img id="img2" onmouseover="delxHide()" src="img/3.jpg" alt="" data-toggle="modal" data-target="#delx">
                     <h2>₱10,000</h2>
                     <p>qwertyuioqwertyuioasdfghjklzxcvbnmqqwer
                         tyuioqwertyuioasdfghjklzxcvbnmq</p>
@@ -397,7 +405,7 @@ function superHide(){
 
                 <div class="course_col">
                     <h3>Super Deluxe</h3>
-                    <img id="img3" onclick="superHide()" src="img/g2.jpg" alt=" " data-toggle="modal" data-target="#super">
+                    <img id="img3" onmouseover="superHide()" src="img/g2.jpg" alt=" " data-toggle="modal" data-target="#super">
                     <h2>₱20,000</h2>
                     <p>qwertyuioqwertyuioasdfghjklzxcvbnmqqwer
                         tyuioqwertyuioasdfghjklzxcvbnmq</p>
